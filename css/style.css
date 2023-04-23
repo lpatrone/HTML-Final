@@ -1,0 +1,391 @@
+*{
+  left: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+/*---Menu---*/
+nav {
+  background-color: #303F9F;
+  color: #fff;
+  height: 50px;
+  font-weight:bold;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #FFC107;
+  color:#000;
+}
+/*--------*/
+
+
+h1 {
+  font-size:2.5em;
+  font-weight: bold;
+  color:white; 
+  text-align: center;
+  margin:20px;
+  padding:10px;
+}
+
+h2{
+  font-size:1.8em; 
+  color:white; 
+  text-align: center;
+  margin:20px;
+  padding:10px;
+}
+
+h3{
+  font-size:1.7em;
+  font-weight: bolder; 
+  color:white; 
+  text-align: center;
+  margin:20px;
+  padding:10px;
+}
+
+h5{
+  font-size:0.8em;
+  color:white; 
+  text-align: center;
+  margin:20px;
+  padding:5px;
+}
+
+p {
+	font-size:1em;
+  color:#333;
+  padding:20px;
+}
+
+.content-home span{
+  font-weight:bold; 
+  color:#FFC107;
+}
+
+article{
+  width: 75%;
+  margin: 20px auto;
+  border-radius: 12px;
+  background-color: #303F9F;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+article h3{
+  color: #FFC107;
+}
+
+article p{
+  color: white;
+}
+
+.search_items{
+  margin: 0 10% 2% 6%;
+}
+
+.search_items label, input, button {
+  margin-left: 25px;
+}
+
+.search_items button{
+  background-color:orange;
+  color: #fff;
+  border-color: #efefef;
+  padding:20px;
+  font-size:1em;
+  cursor:pointer;
+  border-radius:10px;
+}
+
+.search_items button:hover{
+  background-color: #303F9F;
+  border: 2px solid #FFC107;
+  color: #FFC107;
+  cursor:pointer;
+}
+
+
+.related{
+  width:100%;
+  min-height:950px;
+  background-color:#FFC107;
+  color:#333;
+  padding:10px;
+}
+
+.related h3{
+  color: black;
+  font-weight: bolder;
+}
+
+.related button{
+  background-color: #303F9F;
+  color:white;
+  cursor:pointer;
+  border:0;
+  border-radius: 5px;
+  margin:10px;
+  padding: 10px;
+}
+
+
+.card {
+  width: 26%;
+  height: 75vh;
+  background-color: #fff;
+  color:#333;
+  border:1px solid #efefef;
+  border-radius: 5px;
+  float:left;
+  margin: 2% auto 2% 5%;
+  padding:20px;
+}
+
+.card button{
+  color: #fff;
+  background-color: #3F51B5;
+  border-color: #3F51B5;
+  padding:20px;
+  font-size:1em;
+  margin: 2% auto 2% 5%;
+}
+
+.card button:hover{
+  background-color: orange;
+  color: black;
+}
+
+.card img{
+  margin:20px;
+  width:90%;
+  height: 40%;
+}
+
+.card h3{
+  text-align: left;
+  color:#333333;
+  font-weight: bolder;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.card-interna{
+  width:90%;
+  margin:auto;
+  background-color: #fff;
+  border-radius: 5px;
+  border:1px solid #efefef;
+  padding: 20px;
+  margin: 20px 10px;
+  color:#333;
+}
+
+.card-interna h3, .card-interna p{
+    text-align: left;
+}
+
+button{
+  color: #fff;
+  background-color:orange;
+  border-color: #efefef;
+  padding:20px;
+  font-size:1em;
+  cursor:pointer;
+  border-radius:10px;
+}
+
+/* ACA !!! */
+
+.btn-primary {
+  background-color: #3F51B5!important;
+  border-color: #3F51B5!important;
+  padding:20px;
+  font-size:1em;
+  border-radius:10px;
+}
+
+button:hover{
+  color: #fff;
+  background-color:#333333;
+  border-color: #efefef;
+  padding:20px;
+  font-size:1em;
+  cursor:pointer;
+  border-radius:10px;
+}
+
+ input{
+  margin:10px!important;
+  border-radius: 5px;
+  border:1px solid #efefef;
+  padding:20px;
+  font-size:1em;
+}
+
+.form-group input{
+  margin:10px!important;
+  border-radius: 5px;
+  border:1px solid #efefef;
+  padding:20px;
+  font-size:1em;
+}
+
+
+.wrap-img{
+   width:100%;
+   margin:0;
+   padding-top:50px;
+}
+
+.wrap1{
+  background-image: 
+  url(https://i.blogs.es/0ecab2/chainsaw-man/1366_2000.jpeg);
+  min-height:480px;
+}
+
+.wrap2{
+  background-image: url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c912a1ce1d58e50f37495f640cb61839c7183adb78470593267cabaedf4fd3c8._RI_V_TTW_.jpg);
+  background-repeat: no-repeat;
+  min-height:280px;
+}
+
+.wrap3{
+  background-image: url(https://m.media-amazon.com/images/M/MV5BMmVjYzllYTQtNTIxOS00Y2MzLTliZjgtNjU0OTQ2Mzk4ZWY4XkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg);
+  min-height:280px;
+  background-repeat: no-repeat;
+}
+
+.wrap4{
+  background-image: url(https://wallpaperaccess.com/full/8894235.jpg);
+  min-height:280px;
+  background-repeat: no-repeat;
+  
+}
+
+
+.content-home{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  margin:auto;
+  padding:30px;
+  width:75%;
+  background-color: #333333;
+  opacity:0.8;
+
+}
+
+/*#list-anime{
+  width:90%;
+  color:#333333;
+  border:1px solid #999999;
+  min-height:450px;
+  margin:40px;
+  padding:20px;
+  line-height: normal;
+  background-color: whitesmoke;
+  border-radius:5px;
+}*/
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  height: auto;
+  line-height: 50px;
+  bottom:0;
+  padding:30px;
+  margin:0;
+  width:100%;
+}
+
+footer p{
+  color:white;
+  font-size:0.8em;
+  text-align: center;
+}
+
+footer a{
+  color: #fff;
+  margin-right: 30px;
+}
+
+.red-soc:hover{
+  color: grey;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li a {
+    line-height: 30px;
+  }
+  
+}
+
+
+@media screen and (max-width: 980px) {
+  nav {
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li a {
+    line-height: 30px;
+  }
+  
+}
+
+
+
+@media (max-width: 980px) {
+  .related {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
