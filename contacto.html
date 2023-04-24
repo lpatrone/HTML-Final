@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">   <!-- Animación título página animate.style -->    
-    <script src="https://kit.fontawesome.com/0471e319aa.js" crossorigin="anonymous"></script>
-    <title>Contacto </title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">   <!-- Animación título página animate.style -->
+  <script src="https://kit.fontawesome.com/0471e319aa.js" crossorigin="anonymous"></script>
+  <title>Contacto</title>
+
+  <script type="text/javascript">
+    function validarEmail(valor) {
+      // Expresión regular para validar el correo electrónico
+      var regex = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*[.]([a-z]{2,3})$/;
+      if (regex.test(valor)){
+        alert("La dirección de email " + valor + " es correcta.");
+      } else {
+        alert("La dirección de email " + valor + " es incorrecta.");
+        document.getElementById('InputEmail').focus();
+      }
+    }
+  </script>
+
 </head>
 
 <header class="header">
@@ -21,9 +31,7 @@
         <a href="index.html"><img src="img/logo.png" alt="logo" width="220vw"></a>
      </div>
 
-
     <!-- start nav-->
-
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -35,43 +43,32 @@
 
   </header>
 
-
-<body>
+<body onload="document.getElementById('InputName').focus()">
 
 	<main>
 
    <div class="wrap-img wrap4">
-    <div class="content-home">
+    <div class="transparent-box">
       <h1 class="animate__animated animate__pulse animate__slower animate__infinite"> <span> アニメ </span> search </h1>
       <h3> Contacto </h3>
-
     </div>
    </div>
 
-
-
    <article>
 
-    <form>
-  <div class="form-group">
-    <label for="InputData">Nombre y Apellido</label>
-    <input type="text" class="form-control" id="Inputname" placeholder="Ingresá tu nombre y apellido">
-    
-  </div>
-  <div class="form-group">
-    <label for="InputData">Mail</label>
-    <input type="email" class="form-control" id="InputEmail1" placeholder="Ingresá tu email">
-    
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
-
+    <form class="InputData" name="InputData" action="#">
+      <label for="InputData">Nombre y Apellido</label>
+      <input type="text" id="InputName" placeholder="Ingresá tu nombre y apellido" required maxlength="50">
+   
+      <label for="InputData">Mail</label>
+      <input type="email" id="InputEmail" placeholder="Ingresá tu email" required maxlength="100">
+      <br>
+      <button type="submit" class="btn-yellow" onclick="validarEmail(document.getElementById('InputEmail').value)">Enviar</button>
+    </form>
 
    </article>
 
-</main>
-
+  </main>
 
 </body>
 

@@ -2,14 +2,54 @@
   left: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;  
 }
 
 html{
   background-color: white;
-  font-family: 'Open Sans', sans-serif;  
 }
 
-/*---Menu---*/
+.content-carousel{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.transparent-box{
+  background-color: #333333;
+  opacity:0.8;
+  color:white;
+  margin:auto;
+  padding:30px;
+  width:75%;
+  position:absolute;
+  top: 14.5vh;
+  left: 10vw;
+}
+
+.transparent-box-index{
+  top: 10vh;
+}
+
+.transparent-box span{
+  font-weight:bold; 
+  color:#FFC107;
+}
+
+.wrap-img{
+  width:100%;
+  margin:0;
+  padding-top:50px;
+}
+
+/*---Carousel ---*/
+.item > img{
+  width:100%; 
+  max-height: 48vh;
+}
+
+/*--- MENU ---*/
 nav {
   background-color: #303F9F;
   color: #fff;
@@ -35,6 +75,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #FFC107;
   color:#000;
+  text-decoration: none;  
 }
 /*--------*/
 
@@ -79,10 +120,6 @@ p {
   padding:20px;
 }
 
-.content-home span{
-  font-weight:bold; 
-  color:#FFC107;
-}
 
 article{
   width: 75%;
@@ -110,19 +147,23 @@ article p{
   margin-left: 25px;
 }
 
-.search_items button{
+
+.btn-yellow{
   background-color:orange;
-  color: #fff;
-  border-color: #efefef;
+  color: #303F9F;
+  border: 1px solid #efefef;
   padding:20px;
   font-size:1em;
+  font-style: bolder;
+  font-weight: bolder;
   cursor:pointer;
   border-radius:10px;
+  margin-left: 20px;
 }
 
-.search_items button:hover{
+.btn-yellow:hover{
   background-color: #303F9F;
-  border: 2px solid #FFC107;
+  border: 1px solid #FFC107;
   color: #FFC107;
   cursor:pointer;
 }
@@ -213,7 +254,7 @@ article p{
     text-align: left;
 }
 
-button{
+/*button{
   color: #fff;
   background-color:orange;
   border-color: #efefef;
@@ -222,16 +263,12 @@ button{
   cursor:pointer;
   border-radius:10px;
 }
-
-/* ACA !!! */
-
 .btn-primary {
   background-color: #3F51B5!important;
   border-color: #3F51B5!important;
   padding:20px;
   font-size:1em;
   border-radius:10px;
-}
 
 button:hover{
   color: #fff;
@@ -241,67 +278,54 @@ button:hover{
   font-size:1em;
   cursor:pointer;
   border-radius:10px;
+}*/
+
+
+.InputData label{
+  display: block;
+  margin:10px;
 }
 
- input{
-  margin:10px!important;
+.InputData input {
+  width: 60%;
+  margin:10px auto;
   border-radius: 5px;
   border:1px solid #efefef;
   padding:20px;
   font-size:1em;
 }
 
-.form-group input{
-  margin:10px!important;
-  border-radius: 5px;
-  border:1px solid #efefef;
-  padding:20px;
-  font-size:1em;
+.InputData button {
+  margin-top: 3vh;
 }
 
-
-.wrap-img{
-   width:100%;
-   margin:0;
-   padding-top:50px;
+.card button:hover{
+  background-color: orange;
+  color: black;
 }
 
+/* Imagenes para los encabezados de las páginas */
 .wrap1{
-  background-image: 
-  url(https://i.blogs.es/0ecab2/chainsaw-man/1366_2000.jpeg);
-  min-height:480px;
+  background-image: url(https://i.blogs.es/0ecab2/chainsaw-man/1366_2000.jpeg);
+  min-height:280px;
 }
 
 .wrap2{
   background-image: url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c912a1ce1d58e50f37495f640cb61839c7183adb78470593267cabaedf4fd3c8._RI_V_TTW_.jpg);
-  background-repeat: no-repeat;
   min-height:280px;
 }
 
 .wrap3{
   background-image: url(https://m.media-amazon.com/images/M/MV5BMmVjYzllYTQtNTIxOS00Y2MzLTliZjgtNjU0OTQ2Mzk4ZWY4XkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg);
   min-height:280px;
-  background-repeat: no-repeat;
 }
 
 .wrap4{
   background-image: url(https://wallpaperaccess.com/full/8894235.jpg);
   min-height:280px;
-  background-repeat: no-repeat;
-  
 }
 
 
-.content-home{
-  font-family: 'Open Sans', sans-serif;
-  color:white;
-  margin:auto;
-  padding:30px;
-  width:75%;
-  background-color: #333333;
-  opacity:0.8;
-
-}
 
 /*#list-anime{
   width:90%;
