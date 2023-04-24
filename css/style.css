@@ -29,7 +29,9 @@ html{
 }
 
 .transparent-box-index{
-  top: 10vh;
+  width: 60%;
+  top: 9vh;
+  left: 18vw;
 }
 
 .transparent-box span{
@@ -144,7 +146,7 @@ article p{
 }
 
 .search_items label, input, button {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 
@@ -211,12 +213,18 @@ article p{
   border-color: #3F51B5;
   padding:20px;
   font-size:1em;
+  font-weight: bolder;
   margin: 2% auto 2% 5%;
 }
 
-.card button:hover{
+.card a{
+  color: white;
+}
+
+.card button:hover, .card a:hover, .card-interna button:hover{
   background-color: orange;
   color: black;
+  text-decoration: none;
 }
 
 .card img{
@@ -363,8 +371,8 @@ footer a{
   margin-right: 30px;
 }
 
-.red-soc:hover{
-  color: grey;
+.social_networks:hover{
+  color: orange;
 }
 
 
