@@ -2,7 +2,8 @@
   left: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;  
+  font-family: 'Open Sans', sans-serif; 
+  margin:0; 
 }
 
 html{
@@ -22,16 +23,18 @@ html{
   color:white;
   margin:auto;
   padding:30px;
-  width:75%;
+  width:60%;
   position:absolute;
-  top: 14.5vh;
-  left: 10vw;
+  top: 22.5vh;
+  left: 18vw;
 }
 
 .transparent-box-index{
   width: 60%;
   top: 9vh;
   left: 18vw;
+  font-size:1.2em;
+  text-align:center;
 }
 
 .transparent-box span{
@@ -48,7 +51,7 @@ html{
 /*---Carousel ---*/
 .item > img{
   width:100%; 
-  max-height: 48vh;
+  max-height: 90vh;
 }
 
 /*--- MENU ---*/
@@ -57,6 +60,7 @@ nav {
   color: #fff;
   height: 50px;
   font-weight:bold;
+  font-size:1.1em; 
 }
 nav ul {
   list-style: none;
@@ -72,12 +76,14 @@ nav ul li a {
   line-height: 50px;
   color: white;
   text-decoration: none;
+  font-size:1.1em;
 }
 
 nav ul li a:hover {
   background-color: #FFC107;
   color:#000;
-  text-decoration: none;  
+  text-decoration: none; 
+  font-size:1.1em; 
 }
 /*--------*/
 
@@ -135,14 +141,18 @@ article{
 
 article h3{
   color: #FFC107;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 article p{
   color: white;
+  font-size: 1.3em;
 }
 
 .search_items{
   margin: 0 10% 2% 6%;
+  font-size:1em;
 }
 
 .search_items label, input, button {
@@ -151,12 +161,11 @@ article p{
 
 
 .btn-yellow{
-  background-color:orange;
-  color: #303F9F;
+  background-color:#FFC107;
+  color: #333;
   border: 1px solid #efefef;
   padding:20px;
   font-size:1em;
-  font-style: bolder;
   font-weight: bolder;
   cursor:pointer;
   border-radius:10px;
@@ -164,9 +173,9 @@ article p{
 }
 
 .btn-yellow:hover{
-  background-color: #303F9F;
-  border: 1px solid #FFC107;
-  color: #FFC107;
+  background-color: black;
+  border: 1px solid #efefef;
+  color: white;
   cursor:pointer;
 }
 
@@ -205,6 +214,7 @@ article p{
   float:left;
   margin: 2% auto 2% 5%;
   padding:20px;
+  height:auto;
 }
 
 .card button{
@@ -248,13 +258,13 @@ article p{
 }
 
 .card-interna{
-  width:90%;
+  width:80%;
   margin:auto;
   background-color: #fff;
   border-radius: 5px;
   border:1px solid #efefef;
   padding: 20px;
-  margin: 20px 10px;
+  margin: auto;
   color:#333;
 }
 
@@ -315,22 +325,22 @@ button:hover{
 /* Imagenes para los encabezados de las páginas */
 .wrap1{
   background-image: url(https://i.blogs.es/0ecab2/chainsaw-man/1366_2000.jpeg);
-  min-height:280px;
+  min-height:350px;
 }
 
 .wrap2{
   background-image: url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c912a1ce1d58e50f37495f640cb61839c7183adb78470593267cabaedf4fd3c8._RI_V_TTW_.jpg);
-  min-height:280px;
+  min-height:350px;
 }
 
 .wrap3{
   background-image: url(https://m.media-amazon.com/images/M/MV5BMmVjYzllYTQtNTIxOS00Y2MzLTliZjgtNjU0OTQ2Mzk4ZWY4XkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg);
-  min-height:280px;
+  min-height:350px;
 }
 
 .wrap4{
   background-image: url(https://wallpaperaccess.com/full/8894235.jpg);
-  min-height:280px;
+  min-height:350px;
 }
 
 
@@ -418,6 +428,7 @@ footer a{
     flex-direction: column;
   }
   .card {
-    width: 100%;
-  }
+    width: 95%
+}
+
 }
