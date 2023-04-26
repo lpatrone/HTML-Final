@@ -42,6 +42,23 @@ html{
   color:#FFC107;
 }
 
+.header-contacto h1{
+color: #333;
+font-size:3.3em;
+text-align:center;
+}
+
+.header-contacto h3{
+  color: #333;
+  font-size:2.3em;
+  text-align:center;
+  }
+
+.header-contacto span{
+    font-weight:bold; 
+    color:#FFC107;
+}
+
 .wrap-img{
   width:100%;
   margin:0;
@@ -339,9 +356,9 @@ button:hover{
 }
 
 .wrap4{
-  background-image: url(https://wallpaperaccess.com/full/8894235.jpg);
-  min-height:350px;
+  margin-top: -50px;
 }
+
 
 
 
