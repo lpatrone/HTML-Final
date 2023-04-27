@@ -147,7 +147,7 @@ p {
 
 
 article{
-  width: 75%;
+  width: 85%;
   margin: 20px auto;
   border-radius: 12px;
   background-color: #303F9F;
@@ -168,12 +168,14 @@ article p{
 }
 
 .search_items{
-  margin: 0 10% 2% 6%;
+  margin: 0;
   font-size:1em;
 }
 
 .search_items label, input, button {
   margin-left: 15px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 
@@ -186,7 +188,7 @@ article p{
   font-weight: bolder;
   cursor:pointer;
   border-radius:10px;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .btn-yellow:hover{
