@@ -362,20 +362,45 @@ button:hover{
 }
 
 
-
-
-/*#list-anime{
-  width:90%;
-  color:#333333;
+#list-anime{
+  width:85%;
+  color:white;
   border:1px solid #999999;
-  min-height:450px;
-  margin:40px;
+  min-height:250px;
+  margin:auto;
   padding:20px;
   line-height: normal;
-  background-color: whitesmoke;
-  border-radius:5px;
+  margin-bottom:20px;
+  border-radius: 10px;
+}
+
+/*
+#list-anime tr{
+ border: 1px solid rgb(202, 202, 202);
 }*/
 
+#list-anime th{
+  text-align:center;
+  width:15%;
+  font-size:1.1em;
+  background-color:white;
+  color:#333333;
+  height:40px;
+}
+
+#list-anime td{
+  text-align:center;
+  font-size:1.1em;
+}
+
+#list-anime caption{
+  font-size: 1.3em;
+  color: rgb(46, 46, 46);
+  font-weight:bold;
+}
+#list-anime{
+  color:#333333;
+}
 
 footer {
   background-color: #333;
