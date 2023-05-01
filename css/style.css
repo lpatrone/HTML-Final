@@ -249,6 +249,7 @@ article p{
 
 .card a{
   color: white;
+  text-decoration: none;
 }
 
 .card button:hover, .card a:hover, .card-interna button:hover{
