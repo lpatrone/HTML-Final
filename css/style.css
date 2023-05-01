@@ -25,13 +25,13 @@ html{
   padding:30px;
   width:60%;
   position:absolute;
-  top: 22.5vh;
+  top: 21vh;
   left: 18vw;
 }
 
 .transparent-box-index{
   width: 60%;
-  top: 9vh;
+  top: 25vh;
   left: 18vw;
   font-size:1.2em;
   text-align:center;
@@ -68,7 +68,8 @@ text-align:center;
 /*---Carousel ---*/
 .item > img{
   width:100%; 
-  max-height: 90vh;
+  max-height: 81vh;
+  /* max-height: 90vh; */
 }
 
 /*--- MENU ---*/
@@ -359,8 +360,30 @@ button:hover{
 
 .wrap4{
   margin-top: -50px;
+  margin-left: 30%;
 }
 
+
+/* Tabla en pantalla de datos enviados Show_data */
+#table-feedback{
+  border: 2px solid black;
+  border-collapse: separate;
+  margin: 0 auto;
+  width: 226px;
+}
+/* Para hacerla tipo zebra */
+tbody tr:nth-child(odd) {
+  background: gray;
+  color: white;
+}
+tbody tr:nth-child(even) {
+  background:lightgray;
+}
+/* Para el título */
+tbody tr:first-child{
+  background: orange;
+  color: black;
+}
 
 #list-anime{
   width:85%;

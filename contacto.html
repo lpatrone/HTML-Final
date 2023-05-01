@@ -10,6 +10,7 @@
   <script src="https://kit.fontawesome.com/0471e319aa.js" crossorigin="anonymous"></script>
   <title>Contacto</title>
 
+  <!--
   <script type="text/javascript">
     function validarEmail(valor) {
       // Expresión regular para validar el correo electrónico
@@ -22,33 +23,17 @@
       }
     }
   </script>
+-->
 
 </head>
 
-<header class="header">
-
-     <div id="logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo" width="220vw"></a>
-     </div>
-
-    <!-- start nav-->
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="acerca.html">Acerca de</a></li>
-        <li><a href="Novedades.html">Novedades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
 <body onload="document.getElementById('InputName').focus()">
+  <header id="idheader"></header>
 
 	<main>
 
    <div class="wrap-img wrap4">
-    <iframe width="100%" height="450" src="https://www.youtube.com/embed/C_pKddExbXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="40%" height="450" src="https://www.youtube.com/embed/C_pKddExbXI?autoplay=1&loop=1&mute=1&controls=1&playlist=C_pKddExbXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
    </div>
 
    <div class="header-contacto">
@@ -57,29 +42,24 @@
   </div>
 
    <article>
-
-    <form class="InputData" name="InputData" action="#">
-      <label for="InputData">Nombre y Apellido</label>
-      <input type="text" id="InputName" placeholder="Ingresá tu nombre y apellido" required maxlength="50">
-   
-      <label for="InputData">Mail</label>
-      <input type="email" id="InputEmail" placeholder="Ingresá tu email" required maxlength="100">
+    
+    <form class="InputData" action="show_data.html" method="get" target="_self" onsubmit="return validarEmail()">
+      <label for="fNameLName">Nombre y Apellido</label>
+      <input type="text" name="name_Lname" id="InputName" placeholder="Ingresá tu nombre y apellido" required minlength="3" maxlength="50">
+      <label for="fEmail">Mail</label>
+      <input type="email" name="email" id="InputEmail" placeholder="Ingresá tu email" required maxlength="100">
       <br>
-      <button type="submit" class="btn-yellow" onclick="validarEmail(document.getElementById('InputEmail').value)">Enviar</button>
+      <button type="submit" class="btn-yellow">Enviar</button>
     </form>
 
    </article>
 
   </main>
 
+  <footer id="idfooter"></footer>
+
+  <script src="javascript/elementos.js"></script>  
+
 </body>
-
-<footer>
-
-  <a href="https://twitter.com/lasurrutia" target="_blank"><i class="fa-brands fa-twitter fa-l red-soc">   Twitter</i></a> 
-  <i class="fa-brands fa-linkedin-in fa-l social_networks">   Linkedin</i> 
-  <p>Copyright &copy;2023 - Comisión 23004: Luciano, Fernado, Cecilia, Franco</p>
-
-</footer>
 
 </html>
