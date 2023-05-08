@@ -222,12 +222,15 @@ article p{
   border:0;
   border-radius: 5px;
   margin:10px;
-  padding: 10px;
+  padding: 20px;
+  font-size:1em;
+  font-weight: bolder;
+  margin: 2% auto 2% 5%;  
 }
 
-.card {
+.card, .card2 {
   width: 26%;
-  height: 75vh;
+  /*height: 75vh;*/
   background-color: #fff;
   color:#333;
   border:1px solid #efefef;
@@ -238,22 +241,17 @@ article p{
   height:auto;
 }
 
-.card button{
-  color: #fff;
-  background-color: #3F51B5;
-  border-color: #3F51B5;
-  padding:20px;
-  font-size:1em;
-  font-weight: bolder;
-  margin: 2% auto 2% 5%;
-}
-
-.card a{
+.card a, .card2 a{
   color: white;
   text-decoration: none;
 }
 
-.card button:hover, .card a:hover, .card-interna button:hover{
+.card:hover{
+  transform: scale(1.03);
+  border: 3px solid #3F51B5;
+}
+
+.card button:hover, .card a:hover, .card-interna button:hover, .card2 button:hover, .card2 a:hover, .card2-interna button:hover{
   background-color: orange;
   color: black;
   text-decoration: none;
@@ -265,17 +263,17 @@ article p{
   height: 40%;
 }
 
-.card h3{
+.card h3, .card2 h3{
   text-align: left;
   color:#333333;
   font-weight: bolder;
 }
 
-.card h2 {
+.card h2, .card2 h2 {
   margin-top: 0;
 }
 
-.card p {
+.card p, .card2 p {
   margin-bottom: 0;
 }
 
@@ -521,11 +519,40 @@ footer a{
   nav ul li a {
     line-height: 30px;
   }
-  
+  .transparent-box-index{
+    width: 75vw;
+    left: 10vw;
+    margin-top: 2vh;
+  }
+  .item > img{
+    min-height: 40vh;
+  }
+  .search_items input {
+    display: block;
+    margin-left: 29vw;
+    padding: 10px;
+  }
+  .search_items button {
+    margin-top: 3vh;
+    margin-left: 5vw;
+  }
+  .related{
+    height: 150vh;
+  }
+  .card {
+    max-width: 90%;
+    margin-bottom: 10%;
+  }
+  .card img{
+    margin:10px;
+  }
+  .card2{
+    width: 42%;
+  }
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 768px) and (max-width: 980px) {
   nav {
     height: auto;
   }
@@ -538,17 +565,44 @@ footer a{
   nav ul li a {
     line-height: 30px;
   }
-  
+  .transparent-box-index{
+    width: 70vw;
+    left: 13vw;
+    margin-top: 2vh;
+    top: 3vh;
+  }
+  .item > img{
+    max-height: 37vh;
+  }
+  .search_items input {
+    display: block;
+    margin-left: 28vw;
+    width: 32%;
+    padding: 10px;
+  }
+  .search_items button {
+    margin-top: 3vh;
+    margin-left: 6vw;
+  }
+  .related{
+    min-height:245vh;
+  }
+  .card {
+    width: 90%;
+  }
+  .card img{
+    margin:10px;
+    padding-left: 5vw;
+  }  
+  .card2{
+    width: 42%;
+  }
 }
 
 
 
-@media (max-width: 980px) {
+@media (min-width: 980px) {
   .related {
     flex-direction: column;
   }
-  .card {
-    width: 95%
-}
-
 }
