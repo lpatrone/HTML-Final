@@ -24,7 +24,7 @@ elem.innerHTML = `
   <p>Copyright &copy;2023 - Comisión 23004: Luciano, Fernado, Cecilia, Franco</p>
 `
 
-// Para la pagina de contacto
+// Validación para la pagina de contacto
 function validarEmail() {
     let valor = document.getElementById('InputEmail').value;
     // Expresión regular para validar el correo electrónico

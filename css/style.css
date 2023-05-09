@@ -205,8 +205,16 @@ article p{
   padding:10px;
 }
 
+.related-acerca{
+  height: 100vh;
+}
+
 .related-novedades{
   height: 165vh;
+}
+
+.related-contacto{
+  height: 90vh;
 }
 
 .related h1{
@@ -291,45 +299,6 @@ article p{
 .card-interna h3, .card-interna p{
     text-align: left;
 }
-
-/*
-.card button:hover{
-  background-color: orange;
-  color: black;
-}
-
-button{
-  color: #fff;
-  background-color:orange;
-  border-color: #efefef;
-  padding:20px;
-  font-size:1em;
-  cursor:pointer;
-  border-radius:10px;
-}
-.btn-primary {
-  background-color: #3F51B5!important;
-  border-color: #3F51B5!important;
-  padding:20px;
-  font-size:1em;
-  border-radius:10px;
-
-button:hover{
-  color: #fff;
-  background-color:#333333;
-  border-color: #efefef;
-  padding:20px;
-  font-size:1em;
-  cursor:pointer;
-  border-radius:10px;
-}*/
-
-/*
-#BackInput{
-  width: 40%;
-}
-*/
-
 
 .InputData{
   width: 85%;
@@ -506,7 +475,7 @@ footer a{
 
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait){
   nav {
     height: auto;
   }
@@ -522,7 +491,7 @@ footer a{
   .transparent-box-index{
     width: 75vw;
     left: 10vw;
-    margin-top: 2vh;
+    margin-top: 0!important;
   }
   .item > img{
     min-height: 40vh;
@@ -537,7 +506,7 @@ footer a{
     margin-left: 5vw;
   }
   .related{
-    height: 150vh;
+    min-height: 220vh!important;
   }
   .card {
     max-width: 90%;
@@ -546,13 +515,22 @@ footer a{
   .card img{
     margin:10px;
   }
+  .related-acerca{
+    min-height:200vh!important;
+  }
   .card2{
     width: 42%;
+  }
+  .related-novedades{
+    min-height:362vh!important;
+  }
+  .related-contacto{
+    min-height: 90vh!important;
   }
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 980px) {
+@media screen and (min-width: 768px) and (max-width: 980px) and (orientation: portrait){
   nav {
     height: auto;
   }
@@ -594,14 +572,22 @@ footer a{
     margin:10px;
     padding-left: 5vw;
   }  
+  .related-acerca{
+    min-height:200vh;
+  }
   .card2{
-    width: 42%;
+    width: 70%;
+    margin: 10vh 15vw 7vh;
+  }
+  .related-novedades{
+    min-height:385vh;
+  }
+  .related-contacto{
+    min-height:90vh;
   }
 }
 
-
-
-@media (min-width: 980px) {
+@media (min-width: 980px){
   .related {
     flex-direction: column;
   }
