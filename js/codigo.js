@@ -19,7 +19,7 @@ elem.innerHTML = `
 // Armo el footer para todas las páginas
 var elem = document.getElementById("idfooter");
 elem.innerHTML = `
-  <a href="https://twitter.com/lasurrutia" target="_blank"><i class="fa-brands fa-twitter fa-l social_networks">   Twitter</i></a> 
+  <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-l social_networks">   Twitter</i></a> 
   <i class="fa-brands fa-linkedin-in fa-l social_networks">   Linkedin</i> 
   <p>Copyright &copy;2023 - Comisión 23004: Luciano, Fernado, Cecilia, Franco</p>
 `
